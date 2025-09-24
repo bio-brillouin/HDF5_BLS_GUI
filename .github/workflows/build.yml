@@ -34,7 +34,7 @@ jobs:
         run: pyinstaller --onefile --windowed --name HDF5_BLS_GUI src/main.py
 
       - name: Upload executable as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: HDF5_BLS_GUI
           path: dist/
