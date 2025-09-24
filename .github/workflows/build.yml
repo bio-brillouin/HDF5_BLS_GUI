@@ -27,13 +27,14 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install PyQt6 PyInstaller
+          pip install PyInstaller
+          pip install -r requirements.txt
 
       - name: Build executable
-        run: pyinstaller --onefile --windowed your_main_app.py
+        run: pyinstaller --onefile --windowed --name HDF5_BLS_GUI src/main.py
 
       - name: Upload executable as artifact
         uses: actions/upload-artifact@v3
         with:
-          name: your_app-${{ matrix.os }}
+          name: HDF5_BLS_GUI
           path: dist/
