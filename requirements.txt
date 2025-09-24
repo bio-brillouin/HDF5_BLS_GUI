@@ -1,0 +1,15 @@
+# Library dependencies
+HDF5_BLS
+
+# Development dependencies
+pytest
+
+# Documentation dependencies
+sphinx
+sphinx-rtd-theme
+
+# GUI dependencies
+PySide6
+
+
+
