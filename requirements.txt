@@ -1,5 +1,7 @@
 # Library dependencies
 HDF5_BLS
+matplotlib
+graphviz
 
 # Development dependencies
 pytest
