@@ -1,0 +1,40 @@
+<RCC>
+  <qresource prefix="Buttons">
+    <file>images/Abscissa.png</file>
+    <file>images/add_above.png</file>
+    <file>images/add_below.png</file>
+    <file>images/add_spectra.png</file>
+    <file>images/Amplitude_error.png</file>
+    <file>images/Amplitude.png</file>
+    <file>images/bin.png</file>
+    <file>images/BLT_error.png</file>
+    <file>images/BLT.png</file>
+    <file>images/Calibration.png</file>
+    <file>images/convert_bh5.png</file>
+    <file>images/display_raw_spectra.png</file>
+    <file>images/exit.png</file>
+    <file>images/export_code.png</file>
+    <file>images/Frequency.png</file>
+    <file>images/Gamma_error.png</file>
+    <file>images/Gamma.png</file>
+    <file>images/help.png</file>
+    <file>images/Impulse_response.png</file>
+    <file>images/Measure.png</file>
+    <file>images/move_down.png</file>
+    <file>images/move_up.png</file>
+    <file>images/new_db.png</file>
+    <file>images/Nu_error.png</file>
+    <file>images/Nu.png</file>
+    <file>images/open_config.png</file>
+    <file>images/open_db.png</file>
+    <file>images/parameters.png</file>
+    <file>images/properties_to_csv.png</file>
+    <file>images/PSD.png</file>
+    <file>images/Raw_data.png</file>
+    <file>images/remove_spectra.png</file>
+    <file>images/Root.png</file>
+    <file>images/save_as.png</file>
+    <file>images/save.png</file>
+    <file>images/Treatment.png</file>
+  </qresource>
+</RCC>

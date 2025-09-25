@@ -15,7 +15,7 @@ from ComboboxChoose.main import ComboboxChoose
 from ParameterWindow.main import ParameterWindow
 from ProgressBar.main import ProgressBar
 from TreatWindow.main import TreatWindow
-from _customWidgets import CheckableComboBox
+from customWidgets import CheckableComboBox
 
 from HDF5_BLS.load_formats.errors import LoadError_creator, LoadError_parameters
 from HDF5_BLS import wrapper, load_data, conversion_PSD
@@ -1728,7 +1728,6 @@ class MainWindow(qtw.QMainWindow, Ui_w_Main):
         # If no filepath was given, take the file corresponding to the specified version of the library, make sure no overwrite is allowed.
         if filepath is None: 
             import_file = False
-            filepath = "/".join(os.path.abspath(__file__).split("/")[:-3]) + f"/spreadsheets/attributes_v{wrapper.HDF5_BLS_Version}.xlsx"
             overwrite = False
         # If the filepath is given, ask the user if they want to update the properties of the wrapper
         else:
@@ -1736,12 +1735,12 @@ class MainWindow(qtw.QMainWindow, Ui_w_Main):
             overwrite = qtw.QMessageBox.question(self, "Update properties", "Do you want to overwrite the properties of the wrapper with the properties stored in the file?")
             overwrite = True if overwrite == qtw.QMessageBox.Yes else False
 
-        # Update the attributes of the file with the properties from the file
-        if self.wrapper.get_type(self.treeview_selected) != h5py._hl.group.Group:
-            path = "/".join(self.treeview_selected.split("/")[:-1])
-        else: 
-            path = self.treeview_selected
-        self.wrapper.import_properties_data(filepath = filepath, path = path, overwrite = overwrite, delete_child_attributes = delete_child_attributes)
+            # Update the attributes of the file with the properties from the file
+            if self.wrapper.get_type(self.treeview_selected) != h5py._hl.group.Group:
+                path = "/".join(self.treeview_selected.split("/")[:-1])
+            else: 
+                path = self.treeview_selected
+            self.wrapper.import_properties_data(filepath = filepath, path = path, overwrite = overwrite, delete_child_attributes = delete_child_attributes)
 
         # Extract the attributes of the element selected
         attr = self.wrapper.get_attributes(self.treeview_selected)
@@ -1866,7 +1865,7 @@ class MainWindow(qtw.QMainWindow, Ui_w_Main):
             parent.appendRow([item, qtg.QStandardItem(sample), qtg.QStandardItem(date)])
 
         def set_icon_brillouin_type(item, brillouin_type):
-            directory = "/".join(current_dir.split("/")[:-1]) + "/icon"
+            directory = "assets/images"
             if "Abscissa" in brillouin_type: 
                 item.setIcon(qtg.QIcon(f"{directory}/Abscissa.png"))
             if brillouin_type == "Amplitude":

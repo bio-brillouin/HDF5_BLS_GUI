@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'main_window.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.8.2
+## Created by: Qt User Interface Compiler version 6.9.2
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -21,7 +21,8 @@ from PySide6.QtWidgets import (QApplication, QComboBox, QFrame, QGridLayout,
     QMenu, QMenuBar, QPushButton, QSizePolicy,
     QSpacerItem, QStatusBar, QTabWidget, QTableView,
     QTextBrowser, QTreeView, QWidget)
-import Icons_rc
+from assets import Icons_rc
+from assets import Icons_rc
 
 class Ui_w_Main(object):
     def setupUi(self, w_Main):
@@ -160,7 +161,7 @@ class Ui_w_Main(object):
         self.b_ConvertCSV.setObjectName(u"b_ConvertCSV")
         self.b_ConvertCSV.setEnabled(False)
         icon1 = QIcon()
-        icon1.addFile(u":/Buttons/icon/properties_to_csv.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon1.addFile(u":/Buttons/images/properties_to_csv.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.b_ConvertCSV.setIcon(icon1)
         self.b_ConvertCSV.setIconSize(QSize(35, 35))
 
@@ -170,7 +171,7 @@ class Ui_w_Main(object):
         self.b_Save.setObjectName(u"b_Save")
         self.b_Save.setEnabled(True)
         icon2 = QIcon()
-        icon2.addFile(u":/Buttons/icon/save.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon2.addFile(u":/Buttons/images/save.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.b_Save.setIcon(icon2)
         self.b_Save.setIconSize(QSize(35, 35))
 
@@ -180,7 +181,7 @@ class Ui_w_Main(object):
         self.b_AddData.setObjectName(u"b_AddData")
         self.b_AddData.setEnabled(False)
         icon3 = QIcon()
-        icon3.addFile(u":/Buttons/icon/add_spectra.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon3.addFile(u":/Buttons/images/add_spectra.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.b_AddData.setIcon(icon3)
         self.b_AddData.setIconSize(QSize(35, 35))
 
@@ -189,7 +190,7 @@ class Ui_w_Main(object):
         self.b_NewHDF5 = QPushButton(self.gb_buttons)
         self.b_NewHDF5.setObjectName(u"b_NewHDF5")
         icon4 = QIcon()
-        icon4.addFile(u":/Buttons/icon/new_db.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon4.addFile(u":/Buttons/images/new_db.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.b_NewHDF5.setIcon(icon4)
         self.b_NewHDF5.setIconSize(QSize(35, 35))
 
@@ -199,7 +200,7 @@ class Ui_w_Main(object):
         self.b_RemoveData.setObjectName(u"b_RemoveData")
         self.b_RemoveData.setEnabled(False)
         icon5 = QIcon()
-        icon5.addFile(u":/Buttons/icon/remove_spectra.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon5.addFile(u":/Buttons/images/remove_spectra.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.b_RemoveData.setIcon(icon5)
         self.b_RemoveData.setIconSize(QSize(35, 35))
 
@@ -208,7 +209,7 @@ class Ui_w_Main(object):
         self.b_Close = QPushButton(self.gb_buttons)
         self.b_Close.setObjectName(u"b_Close")
         icon6 = QIcon()
-        icon6.addFile(u":/Buttons/icon/exit.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon6.addFile(u":/Buttons/images/exit.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.b_Close.setIcon(icon6)
         self.b_Close.setIconSize(QSize(35, 35))
 
@@ -221,7 +222,7 @@ class Ui_w_Main(object):
         self.b_OpenHDF5 = QPushButton(self.gb_buttons)
         self.b_OpenHDF5.setObjectName(u"b_OpenHDF5")
         icon7 = QIcon()
-        icon7.addFile(u":/Buttons/icon/open_db.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon7.addFile(u":/Buttons/images/open_db.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.b_OpenHDF5.setIcon(icon7)
         self.b_OpenHDF5.setIconSize(QSize(35, 35))
 
@@ -231,7 +232,7 @@ class Ui_w_Main(object):
         self.b_ExportCodeLine.setObjectName(u"b_ExportCodeLine")
         self.b_ExportCodeLine.setEnabled(False)
         icon8 = QIcon()
-        icon8.addFile(u":/Buttons/icon/export_code.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon8.addFile(u":/Buttons/images/export_code.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.b_ExportCodeLine.setIcon(icon8)
         self.b_ExportCodeLine.setIconSize(QSize(35, 35))
 

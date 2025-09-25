@@ -5,6 +5,9 @@ from PySide6 import QtWidgets as qtw
 from PySide6 import QtGui as qtg
 import time
 
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__))))
+
 from Main import main
 
 if __name__ == "__main__":

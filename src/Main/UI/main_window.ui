@@ -92,7 +92,7 @@
                  <string/>
                 </property>
                 <property name="icon">
-                 <iconset resource="../../Icons.qrc">
+                 <iconset>
                   <normaloff>:/Buttons/icon/parameters.png</normaloff>:/Buttons/icon/parameters.png</iconset>
                 </property>
                </widget>
@@ -135,8 +135,8 @@
           <string/>
          </property>
          <property name="icon">
-          <iconset resource="../../Icons.qrc">
-           <normaloff>:/Buttons/icon/properties_to_csv.png</normaloff>:/Buttons/icon/properties_to_csv.png</iconset>
+          <iconset resource="../../../assets/Icons.qrc">
+           <normaloff>:/Buttons/images/properties_to_csv.png</normaloff>:/Buttons/images/properties_to_csv.png</iconset>
          </property>
          <property name="iconSize">
           <size>
@@ -155,8 +155,8 @@
           <string/>
          </property>
          <property name="icon">
-          <iconset resource="../../Icons.qrc">
-           <normaloff>:/Buttons/icon/save.png</normaloff>:/Buttons/icon/save.png</iconset>
+          <iconset resource="../../../assets/Icons.qrc">
+           <normaloff>:/Buttons/images/save.png</normaloff>:/Buttons/images/save.png</iconset>
          </property>
          <property name="iconSize">
           <size>
@@ -175,8 +175,8 @@
           <string/>
          </property>
          <property name="icon">
-          <iconset resource="../../Icons.qrc">
-           <normaloff>:/Buttons/icon/add_spectra.png</normaloff>:/Buttons/icon/add_spectra.png</iconset>
+          <iconset resource="../../../assets/Icons.qrc">
+           <normaloff>:/Buttons/images/add_spectra.png</normaloff>:/Buttons/images/add_spectra.png</iconset>
          </property>
          <property name="iconSize">
           <size>
@@ -192,8 +192,8 @@
           <string/>
          </property>
          <property name="icon">
-          <iconset resource="../../Icons.qrc">
-           <normaloff>:/Buttons/icon/new_db.png</normaloff>:/Buttons/icon/new_db.png</iconset>
+          <iconset resource="../../../assets/Icons.qrc">
+           <normaloff>:/Buttons/images/new_db.png</normaloff>:/Buttons/images/new_db.png</iconset>
          </property>
          <property name="iconSize">
           <size>
@@ -212,8 +212,8 @@
           <string/>
          </property>
          <property name="icon">
-          <iconset resource="../../Icons.qrc">
-           <normaloff>:/Buttons/icon/remove_spectra.png</normaloff>:/Buttons/icon/remove_spectra.png</iconset>
+          <iconset resource="../../../assets/Icons.qrc">
+           <normaloff>:/Buttons/images/remove_spectra.png</normaloff>:/Buttons/images/remove_spectra.png</iconset>
          </property>
          <property name="iconSize">
           <size>
@@ -229,8 +229,8 @@
           <string/>
          </property>
          <property name="icon">
-          <iconset resource="../../Icons.qrc">
-           <normaloff>:/Buttons/icon/exit.png</normaloff>:/Buttons/icon/exit.png</iconset>
+          <iconset resource="../../../assets/Icons.qrc">
+           <normaloff>:/Buttons/images/exit.png</normaloff>:/Buttons/images/exit.png</iconset>
          </property>
          <property name="iconSize">
           <size>
@@ -259,8 +259,8 @@
           <string/>
          </property>
          <property name="icon">
-          <iconset resource="../../Icons.qrc">
-           <normaloff>:/Buttons/icon/open_db.png</normaloff>:/Buttons/icon/open_db.png</iconset>
+          <iconset resource="../../../assets/Icons.qrc">
+           <normaloff>:/Buttons/images/open_db.png</normaloff>:/Buttons/images/open_db.png</iconset>
          </property>
          <property name="iconSize">
           <size>
@@ -279,8 +279,8 @@
           <string/>
          </property>
          <property name="icon">
-          <iconset resource="../../Icons.qrc">
-           <normaloff>:/Buttons/icon/export_code.png</normaloff>:/Buttons/icon/export_code.png</iconset>
+          <iconset resource="../../../assets/Icons.qrc">
+           <normaloff>:/Buttons/images/export_code.png</normaloff>:/Buttons/images/export_code.png</iconset>
          </property>
          <property name="iconSize">
           <size>
@@ -431,7 +431,8 @@
   </action>
  </widget>
  <resources>
-  <include location="../../Icons.qrc"/>
+  <include location="../../../assets/Icons.qrc"/>
+  <include location="../../../assets/Icons.qrc"/>
  </resources>
  <connections/>
 </ui>

@@ -19,7 +19,7 @@ from PySide6.QtWidgets import (QAbstractButton, QApplication, QDialog, QDialogBu
     QGridLayout, QHeaderView, QLabel, QLineEdit,
     QListView, QPushButton, QSizePolicy, QTabWidget,
     QTextEdit, QTreeView, QWidget)
-import Icons_rc
+from assets import Icons_rc
 
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
