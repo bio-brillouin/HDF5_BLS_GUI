@@ -1586,7 +1586,13 @@ class MainWindow(qtw.QMainWindow, Ui_w_Main):
             pos = max_col*(line-1) + col
 
             # Extract the element to plot
-            parent_path = self.treeview_selected + "/" + treatment
+            temp = self.treeview_selected.split("/")
+            while len(temp) > 1:
+                if self.wrapper.get_type(path = "/".join(temp), return_Brillouin_type = True) == "Measure":
+                    break
+                temp = temp[:-1]
+            if len(temp) == 0: return
+            parent_path = "/".join(temp) + "/" + treatment
             childs = self.wrapper.get_children_elements(parent_path)
 
             # Adjust the value selected in the combobox to the Brillouin type of the element
