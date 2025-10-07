@@ -13,3 +13,21 @@ The HDF5_BLS_GUI is a graphical user interface (GUI) for the HDF5_BLS library. I
 ## Installation
 
 The package is under development but executables will be available soon.
+
+If you want to test the package, you can run the following commands:
+
+```bash
+git clone https://github.com/bio-brillouin/HDF5_BLS_GUI.git
+cd HDF5_BLS_GUI
+pip install -e .
+```
+
+This will install the package in editable mode, allowing you to make changes to the code and see the effects immediately. You can then run the GUI by executing the following command:
+
+```bash
+python src/main.py
+```
+
+## Usage
+
+To use the HDF5_BLS_GUI, you need to have the HDF5_BLS library installed.
