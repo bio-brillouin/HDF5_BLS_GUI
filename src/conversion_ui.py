@@ -4,7 +4,6 @@ from PySide6 import QtGui as qtg
 import h5py
 
 import numpy as np
-from scipy.optimize import minimize
 
 from ComboboxChoose.main import ComboboxChoose
 from ParameterCurve.main import ar_BLS_VIPA_parameters

@@ -18,8 +18,7 @@ from TreatWindow.main import TreatWindow
 from customWidgets import CheckableComboBox
 
 from HDF5_BLS.load_formats.errors import LoadError_creator, LoadError_parameters
-from HDF5_BLS import wrapper, load_data, conversion_PSD
-from HDF5_BLS.WrapperError import WrapperError_Save, WrapperError_Overwrite, WrapperError_ArgumentType
+from HDF5_BLS import wrapper, load_data, conversion_PSD, WrapperError_Save, WrapperError_Overwrite, WrapperError_ArgumentType
 import conversion_ui, treat_ui
 
 current_dir = os.path.abspath(os.path.dirname(__file__))
@@ -1063,6 +1062,7 @@ class MainWindow(qtw.QMainWindow, Ui_w_Main):
         None
         """
         self.wrapper.repack(force_repack=True)
+        self.textBrowser_Log.append(f"The HDF5 file located at <i>{self.filepath}</i> has been repacked")
 
     def save_hdf5(self, saveas=False):
         """
